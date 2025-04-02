@@ -28,7 +28,7 @@ export default function Home() {
         {/* Right Image */}
         <div className="flex-1">
           <img
-            src="https://via.placeholder.com/500x300?text=Your+Image+Here"
+            src="https://placehold.co/500x300?text=Your+Image+Here"
             alt="Placeholder"
             className="rounded-lg shadow-md"
           />
