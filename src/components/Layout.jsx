@@ -4,11 +4,14 @@ import Footer from './Footer'
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <Header />
-      <main className="flex-1 px-4 py-8 max-w-6xl mx-auto">
+
+      {/* Remove layout constraint from here */}
+      <div className="flex-1">
         <Outlet />
-      </main>
+      </div>
+
       <Footer />
     </div>
   )

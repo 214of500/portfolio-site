@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import "@fontsource/inter/index.css";
 
 import './index.css'
 import Layout from './components/Layout'
@@ -10,6 +11,7 @@ import Competencies from './pages/Competencies'
 import Insights from './pages/Insights'
 import Consulting from './pages/Consulting'
 import Contact from './pages/Contact'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
