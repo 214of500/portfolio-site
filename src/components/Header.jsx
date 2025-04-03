@@ -8,14 +8,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 py-4 sm:py-5">
         
         {/* Logo */}
-        <div className="flex items-center space-x-4">
-          <img
-            src="https://placehold.co/48x48?text=D"
-            alt="Dominik logo"
-            className="w-12 h-12 rounded-full"
-          />
-          <span className="text-white text-lg sm:text-xl font-medium hidden sm:inline"> </span>
-        </div>
+        {/* Left: DM Text */}
+      <div className="text-[#a3e635] font-bold text-2xl sm:text-2xl">
+        DM
+      </div>
 
         {/* Nav Links */}
         

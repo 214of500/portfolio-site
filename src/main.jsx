@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import "@fontsource/inter/index.css";
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 import './index.css'
 import Layout from './components/Layout'

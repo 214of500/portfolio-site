@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   @apply font-sans;
 }
@@ -16,10 +15,10 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0.2em;
+  bottom: 3px; /* Adjust this value to ensure the underline sits just below the text */
   width: 100%;
-  height: 6px;
-  background-color: white;
+  height: 6px; /* Adjust height of the underline */
+  background-color: currentColor;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -28,6 +27,26 @@ body {
 
 .link-underline-thick:hover::after {
   transform: scaleX(1);
+}
+
+
+.group:hover .link-underline-thick::after {
+  transform: scaleX(1);
+}
+
+
+.card-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px; /* Adjust this value to ensure the underline sits just below the text */
+  width: 100%;
+  height: 3px; /* Adjust height of the underline */
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 0;
 }
 
 :root {
@@ -47,11 +66,11 @@ body {
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
-  color: #535bf2;
+  color: #06b6d4; /* Specific hover color for links */
 }
 
 body {
@@ -61,7 +80,6 @@ body {
   min-height: 100vh;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
 
 h1 {
   font-size: 3.2em;
@@ -79,9 +97,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #ffffff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -89,13 +109,31 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #ffffff;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #a3e635;
   }
+
   button {
     background-color: #f9f9f9;
   }
+}
+
+.hero-bottom-shadow {
+  position: relative;
+  z-index: 10;
+}
+
+.hero-bottom-shadow::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), transparent);
+  pointer-events: none;
 }
