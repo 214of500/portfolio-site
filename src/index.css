@@ -18,7 +18,7 @@ body {
   bottom: 3px; /* Adjust this value to ensure the underline sits just below the text */
   width: 100%;
   height: 6px; /* Adjust height of the underline */
-  background-color: currentColor;
+  background-color: #a3e635; /* Match brand */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -27,6 +27,7 @@ body {
 
 .link-underline-thick:hover::after {
   transform: scaleX(1);
+  
 }
 
 
