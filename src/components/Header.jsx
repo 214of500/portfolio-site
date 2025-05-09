@@ -4,19 +4,21 @@ export default function Header() {
   const location = useLocation()
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
-        
+<header className="fixed top-0 left-0 w-full bg-black text-white z-50 shadow-md">
+<div className="w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between py-4 sm:py-5">
+
         {/* Left: DM Logo Link */}
-        <Link
-          to="/"
-          className="no-underline link-underline-thick text-[#a3e635] font-bold text-xl sm:text-xl"
+        <p
+          className="no-underline link-underline-thick text-[#a3e635] font-semibold text-l sm:text-l"
         >
           Dominik Maliszewki
-        </Link>
+        </p>
 
         {/* Nav Links */}
         <nav className="flex space-x-6 sm:space-x-8 text-white text-base sm:text-lg font-medium sm:font-semibold">
+        <Link to="/" className={`text-white font-bold no-underline link-underline-thick focus:outline-none ${location.pathname === '/' ? 'underline' : ''}`}>
+            home
+          </Link>
           <Link to="/recruiters" className={`text-white font-bold no-underline link-underline-thick focus:outline-none ${location.pathname === '/recruiters' ? 'underline' : ''}`}>
             recruiters
           </Link>

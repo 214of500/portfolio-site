@@ -10,11 +10,9 @@ export default function Experience() {
   const spacingFactor = 0.96;
   const [expandedIndex, setExpandedIndex] = useState(null);
 
-  
-  
-
   const experiences = [
-    { title: "Senior Product Manager", company: "Egg", start: 2021 + 8 / 12, end: 2024 + 11 / 12, color: "#fcd400" },
+    { title: "Senior Product Manager", company: "Egg", start: 2022 + 10 / 12, end: 2024 + 11 / 12, color: "#fcd400" },
+    { title: "Change Manager", company: "Egg", start: 2021 + 8 / 12, end: 2022 + 10 / 12, color: "#fcd400" },
     { title: "Project & Governance Lead", company: "Liberty Shared Services", start: 2019 + 9 / 12, end: 2021 + 8 / 12, color: "#005aa7" },
     { title: "Variable Pay Analyst", company: "Virgin Media", start: 2017 + 5 / 12, end: 2019 + 9 / 12, color: "#E60000" },
     { title: "Sales Advisor", company: "Virgin Media", start: 2016 + 1 / 12, end: 2017 + 5 / 12, color: "#E60000" },
@@ -35,11 +33,12 @@ export default function Experience() {
     { type: "Training", icon: "🌍", date: 2018.8333, title: "SOx Controls Testing – Unity Media", summary: "Supported Sox testing and compliance preparation in Cologne.", color: "#64748b" },
     { type: "Certification", icon: "🎓", date: 2019.1667, title: "UI Path Developer (Foundation)", summary: "Completed to gain hands-on knowledge of RPA development fundamentals.", color: "#6366f1" },
     { type: "Certification", icon: "🎓", date: 2025.25, title: "ServiceNow Admin Fundamentals", summary: "Self-led learning to deepen platform admin and workflow configuration skills.", color: "#6366f1" },
-    { type: "Certification", icon: "🎓", date: 2019.5, title: "Executive Programme – Digital Transformation", summary: "Liberty Global-sponsored exec program with Leeds University.", color: "#6366f1" },
+    { type: "Certification", icon: "🎓", date: 2020.01, title: "Executive Programme – Digital Transformation", summary: "Liberty Global-sponsored exec program with Leeds University.", color: "#6366f1" },
     { type: "Certification", icon: "🎓", date: 2023.8333, title: "Solar PV for Non-Installers", summary: "Expanded industry knowledge through practical solar training.", color: "#6366f1" },
     { type: "Certification", icon: "🎓", date: 2021.5, title: "Finance Academy – Procurement", summary: "Completed procurement module as part of LG’s Finance Academy.", color: "#6366f1" },
-    { type: "Recognition", icon: "🏆", date: 2018.5833, title: "Superstar Award", summary: "Recognised for exceptional delivery and team contribution.", color: "#facc15" },
-    { type: "Recognition", icon: "🏆", date: 2019.5833, title: "Superstar Award", summary: "Second consecutive leadership nominated recognition.", color: "#facc15" },
+    { type: "Certification", icon: "🎓", date: 2013.5, title: "Personal Licence", summary: "Completed Pearsone EDI Level 2 for Personal Licence Holders", color: "#6366f1" },
+    { type: "Recognition", icon: "🏆", date: 2017.2, title: "Superstar Award", summary: "Recognised for exceptional delivery and team contribution.", color: "#facc15" },
+    { type: "Recognition", icon: "🏆", date: 2018.2, title: "Superstar Award", summary: "Second consecutive leadership nominated recognition.", color: "#facc15" },
     { type: "Recognition", icon: "🏆", date: 2023.9167, title: "Outstanding Contribution Award", summary: "Leadership recognition for outstanding contribution in B2C product", color: "#facc15" },
     { type: "Community", icon: "🧠", date: 2020.8333, title: "Neurodiversity SteerCo", summary: "Contributed to internal efforts supporting neurodivergent colleagues.", color: "#a855f7" }
   ];
@@ -93,31 +92,38 @@ callouts
 
   return (
     <>
-        {/* Reusable Hero Section */}
-        <section className="w-full h-[40vh] pt-16 flex items-center px-8 sm:px-16 lg:px-24 bg-black dark:bg-black relative shadow-[0_8px_16px_-8px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_16px_-8px_rgba(255,255,255,0.05)]">
-          <div className="w-full max-w-[900px] mx-auto">
-            <div className="text-left">
-              <div className="flex items-center gap-3 mb-4">
-                
-              <h1 className="text-4xl sm:text-5xl font-bold text-white dark:text-white relative inline-block">
-  <span className="relative z-10">experience</span>
-  <span className="absolute left-0 bottom-[2px] w-full h-[8px] bg-[#a3e635] z-0"></span>
-</h1>
-              </div>
-              <p className="text-lg sm:text-xl text-white dark:text-gray-300 ">
-              A visual timeline of professional experience and education
-               </p>
+      {/* Hero Section */}
+      <section className="w-full h-[30vh] flex items-center bg-black dark:bg-black relative shadow-[...] px-8 sm:px-16 lg:px-24">
+        <div className="mt-[15vh] w-full max-w-5xl mx-auto">
+          <div className="text-left">
+            <div className="flex items-center gap-3 mb-4">
+              <h1 className="text-4xl sm:text-5xl font-bold text-white dark:text-white relative">
+                <span className="relative z-10">experience</span>
+                <span className="absolute left-0 bottom-[2px] w-full h-[8px] bg-[#a3e635] z-0"></span>
+              </h1>
             </div>
+            <p className="text-lg sm:text-xl text-white dark:text-gray-300">
+            Visual timeline of prefessional experience, education and highlights
+            </p>
           </div>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_4px_rgba(255,255,255,0.05)]" />
+      </section>
+
   
-          {/* Divider line at bottom */}
-          <div className="absolute bottom-0 left-0 w-full h-[2px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_4px_rgba(255,255,255,0.05)]" />
-        </section>
+      {/* Search Bar Section */}
+      <section className="w-full h-[10vh] bg-black dark:bg-black flex items-center">
+    </section>
 
-      <section className="relative bg-[#f9fafb] dark:bg-[#0f172a] px-8 sm:px-16 lg:px-24" style={{ height: `${containerHeight}px` }}>
-        <div className="relative w-full max-w-[1200px] mx-auto h-full">
+      {/* Experience Timeline Section */}
+      <section className="w-full bg-[#f9fafb] dark:bg-[#0f172a] py-16 px-8 sm:px-16 lg:px-24">
+        <div className="w-full max-w-5xl mx-auto mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Experience Timeline</h2>
+        </div>
 
-          <div className="absolute left-1/2 bg-gray-300 dark:bg-gray-600 transform -translate-x-1/2"
+        <div className="relative w-full max-w-[1200px] mx-auto" style={{ height: `${containerHeight}px` }}>
+          <div
+            className="absolute left-1/2 bg-gray-300 dark:bg-gray-600 transform -translate-x-1/2"
             style={{ top: `${topPadding}px`, height: `${containerHeight - 2 * topPadding}px`, width: "4px" }}
           />
 
@@ -131,6 +137,7 @@ callouts
               </div>
             );
           })}
+
 
           {/* LEFT: Experience Boxes */}
           {experiences.map((exp, idx) => {
@@ -197,10 +204,6 @@ callouts
     </div>
   );
 })}
-
-
-
-
         </div>
       </section>
     </>

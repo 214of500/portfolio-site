@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             {/* LinkedIn Button */}
             <a
-              href="https://www.linkedin.com/in/your-link"
+              href="https://https://www.linkedin.com/in/dominik-maliszewski-49724898/.linkedin.com/in/your-link"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-[240px] px-6 py-3 bg-black text-white rounded-md flex items-center justify-center gap-2 hover:opacity-90 transition font-bold"
@@ -34,7 +34,7 @@ export default function Contact() {
 
             {/* Email Button */}
             <a
-              href="mailto:your@email.com"
+              href="mailto:dommaliszewski@outlook.com.com"
               className="w-full sm:w-[240px] px-6 py-3 border-2 border-black text-black dark:text-white rounded-md flex items-center justify-center gap-2 hover:bg-[#a3e635] hover:text-black transition font-bold"
             >
               <i className="fas fa-envelope text-base"></i> Email Me

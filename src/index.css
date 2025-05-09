@@ -70,10 +70,6 @@ a {
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #06b6d4; /* Specific hover color for links */
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -115,7 +111,7 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #a3e635;
+    color: #ffffff;
   }
 
   button {
